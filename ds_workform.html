@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ds_styleworkform.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Formulário</h1>
+        <p id="subtitulo">Complete suas informações</p>
+    </div>
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="firstname"><strong>Nome</strong></label>
+                <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+            </div>
+            <div class="campo">
+                <label for="lastname"><strong>Sobrenome</strong></label>
+                <input id="lastname" type="text" name="firstname" placeholder="Digite seu sobrenome" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="campo">
+                <label for="phone"><strong>Celular</strong></label>
+                <input id="phone" type="tel" name="phone" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <legend><strong>Gênero</strong></legend>                 
+            <input id="male" type="radio" name="gender">
+            <label for="male">Masculino</label>    
+            <input id="female" type="radio" name="gender">
+            <label for="female">Feminino</label>   
+            <input id="others" type="radio" name="gender">
+            <label for="others">Outros</label>         
+            <input id="none" type="radio" name="gender">
+            <label for="none">Prefiro não dizer</label>    
+        </fieldset>
+        <div class="campo">
+            <label for="date"><strong><br>Data de nascimento</strong></label>
+            <input id="date" type="date">
+        </div>
+        <fieldset class="grupo">
+            <legend><strong>Local de nascimento</strong></legend>
+            <div class="campo">
+                <label for="city">Cidade</label>
+                <input id="city" type="text" name="city" placeholder="Ex: Volta Redonda" required>
+            </div>
+            <div class="campo">
+                <label for="state">Estado</label>
+                <input id="state" type="text" name="state" placeholder="Ex: Rio de Janeiro" required>
+            </div>
+         </fieldset>
+        <div class="grupo">
+            <legend><strong>Grau de escolaridade</strong></legend>
+            <div class="campo">
+                <select>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Ensino fundamental incompleto</option>
+                    <option>Ensino fundamental (cursando)</option>
+                    <option>Ensino fundamental completo</option>
+                    <option>Ensino médio incompleto</option>
+                    <option>Ensino médio (cursando)</option>
+                    <option>Ensino médio completo</option>
+                    <option>Formação superior incompleta</option>
+                    <option>Formação superior (cursando)</option>
+                    <option>Formação superior completa</option>
+                    <option>Pós-graduação no nível especialização</option>
+                    <option>Pós-graduação no nível mestrado</option>
+                    <option>Pós-graduação no nível doutorado</option>
+                </select>
+            </div>
+        </div>
+        <fieldset class="grupo">
+            <legend><strong>Idiomas</strong></legend>
+                <div class="campo">
+                    <input id="portuguese" type="checkbox" name="languages" checked>
+                    <label for="portuguese">Português</label>
+                </div>
+                <div class="campo">
+                    <input id="english" type="checkbox" name="languages">
+                    <label for="english">Inglês</label>
+                </div>
+                <div class="campo">
+                    <input id="french" type="checkbox" name="languages">
+                    <label for="french">Francês</label>
+                </div>
+                <div class="campo">
+                    <input id="spanish" type="checkbox" name="languages">
+                    <label for="spanish">Espanhol</label>
+                </div>
+        </fieldset>
+        <fieldset class="grupo">
+            <legend><strong>Hábito de leitura</strong></legend>
+                <div class="campo">
+                    <input id="books" type="checkbox" name="reading">
+                    <label for="books">Livros</label>
+                </div>
+                <div class="campo">
+                    <input id="magazines" type="checkbox" name="reading">
+                    <label for="magazines">Revistas</label>
+                </div>
+                <div class="campo">
+                    <input id="newspapers" type="checkbox" name="reading">
+                    <label for="newspapers">Jornais</label>
+                </div>
+                <div class="campo">
+                    <input id="internet" type="checkbox" name="reading">
+                    <label for="internet">Internet</label>
+                </div>
+                <div class="campo">
+                    <input id="others" type="checkbox" name="reading">
+                    <label for="others">Outros</label>
+                </div>
+        </fieldset>
+        <div class="campo">
+            <label id="color"><strong>Cor favorita</strong></label>
+            <input for="color" type="color" name="color">
+        </div>            
+        <div class="botao">
+            <button class="botao" type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+<!-- Créditos de ajuda: Rafaella Ballerini e Larissa Kich -->
+</html>
